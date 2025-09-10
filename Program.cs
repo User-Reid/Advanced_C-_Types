@@ -1,9 +1,12 @@
-﻿var fishyStruct1 = new FishyStruct { Numbers = new List<int> { 1, 2, 3 } };
-var fishyStruct2 = fishyStruct1;
+﻿var point = new Point(10, 20);
 
-fishyStruct2.Numbers.Clear();
+MoveToRightBy1Unit(point);
 
 Console.ReadKey();
+
+void MoveToRightBy1Unit(Point point) {
+  point.X++;
+}
 
 struct FishyStruct
 {
@@ -12,8 +15,8 @@ struct FishyStruct
 
 struct Point
 {
-  public int X { get; set; }
-  public int Y { get; set; }
+  public int X { get; init; }
+  public int Y { get; init; }
 
   public Point()
   {
