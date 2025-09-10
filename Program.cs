@@ -1,21 +1,8 @@
-﻿var point = new Point(1, 3);
-var anotherPoint = point;
-anotherPoint.Y = 100;
-
-System.Console.WriteLine($"point is {point}");
-System.Console.WriteLine($"another Point is {anotherPoint}");
-
-SomeMethod(5);
-SomeMethod(new Person());
-
+﻿// Point nullPoint = null;
+Person person = new Person();
 Console.ReadKey();
 
-void SomeMethod<T>(T param) where T : struct
-{
-  
-}
-
-struct Point
+ struct Point
 {
   public int X { get; set; }
   public int Y { get; set; }
@@ -29,8 +16,16 @@ struct Point
   public override string ToString() => $"X: {X}, Y: {Y}";
 }
 
+struct DerivedPoint : Person
+{
+  
+}
+
 class Person
 {
+  private Point _favouritePoint;
+  private Person _favouritePerson;
   public int Id { get; }
   public string Name { get; init; }
+
 }
