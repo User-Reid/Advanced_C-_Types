@@ -1,11 +1,16 @@
-﻿// Point nullPoint = null;
-Person person = new Person();
-var point = new Point();
+﻿var fishyStruct1 = new FishyStruct { Numbers = new List<int> { 1, 2, 3 } };
+var fishyStruct2 = fishyStruct1;
 
+fishyStruct2.Numbers.Clear();
 
 Console.ReadKey();
 
- struct Point
+struct FishyStruct
+{
+  public List<int> Numbers { get; init; }
+}
+
+struct Point
 {
   public int X { get; set; }
   public int Y { get; set; }
@@ -23,11 +28,6 @@ Console.ReadKey();
   }
 
   public override string ToString() => $"X: {X}, Y: {Y}";
-}
-
-struct DerivedPoint : Person
-{
-  
 }
 
 class Person
