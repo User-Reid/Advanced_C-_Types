@@ -86,10 +86,10 @@ Console.ReadKey();
 // }
 
 [AttributeUsage(AttributeTargets.Property)]
-class MustBeLargerThan : Attribute
+public class MustBeLargerThanAttribute : Attribute
 {
   public int Min { get; }
-  public MustBeLargerThan(int min)
+  public MustBeLargerThanAttribute(int min)
   {
     Min = min;
   }
