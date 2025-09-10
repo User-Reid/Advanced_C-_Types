@@ -1,15 +1,36 @@
-﻿
-[Some(new int[] {1,2,3,})]
-public class SomeClass
-{
+﻿var point = new Point(1, 3);
+var anotherPoint = point;
+anotherPoint.Y = 100;
 
+System.Console.WriteLine($"point is {point}");
+System.Console.WriteLine($"another Point is {anotherPoint}");
+
+SomeMethod(5);
+SomeMethod(new Person());
+
+Console.ReadKey();
+
+void SomeMethod<T>(T param) where T : struct
+{
+  
 }
 
-public class SomeAttribute : Attribute
+struct Point
 {
-  public int[] Numbers { get; }
-  public SomeAttribute(int[] numbers)
+  public int X { get; set; }
+  public int Y { get; set; }
+
+  public Point(int x, int y)
   {
-    Numbers = numbers;
+    X = x;
+    Y = y;
   }
+
+  public override string ToString() => $"X: {X}, Y: {Y}";
+}
+
+class Person
+{
+  public int Id { get; }
+  public string Name { get; init; }
 }
