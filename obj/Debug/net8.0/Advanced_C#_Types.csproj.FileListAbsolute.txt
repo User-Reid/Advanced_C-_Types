@@ -1,0 +1,15 @@
+C:\Users\aerma\Downloads\UT-Bootcamp\Udemy\C#\Advanced_C#_Types\bin\Debug\net8.0\Advanced_C#_Types.exe
+C:\Users\aerma\Downloads\UT-Bootcamp\Udemy\C#\Advanced_C#_Types\bin\Debug\net8.0\Advanced_C#_Types.deps.json
+C:\Users\aerma\Downloads\UT-Bootcamp\Udemy\C#\Advanced_C#_Types\bin\Debug\net8.0\Advanced_C#_Types.runtimeconfig.json
+C:\Users\aerma\Downloads\UT-Bootcamp\Udemy\C#\Advanced_C#_Types\bin\Debug\net8.0\Advanced_C#_Types.dll
+C:\Users\aerma\Downloads\UT-Bootcamp\Udemy\C#\Advanced_C#_Types\bin\Debug\net8.0\Advanced_C#_Types.pdb
+C:\Users\aerma\Downloads\UT-Bootcamp\Udemy\C#\Advanced_C#_Types\obj\Debug\net8.0\Advanced_C#_Types.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aerma\Downloads\UT-Bootcamp\Udemy\C#\Advanced_C#_Types\obj\Debug\net8.0\Advanced_C#_Types.AssemblyInfoInputs.cache
+C:\Users\aerma\Downloads\UT-Bootcamp\Udemy\C#\Advanced_C#_Types\obj\Debug\net8.0\Advanced_C#_Types.AssemblyInfo.cs
+C:\Users\aerma\Downloads\UT-Bootcamp\Udemy\C#\Advanced_C#_Types\obj\Debug\net8.0\Advanced_C#_Types.csproj.CoreCompileInputs.cache
+C:\Users\aerma\Downloads\UT-Bootcamp\Udemy\C#\Advanced_C#_Types\obj\Debug\net8.0\Advanced_C#_Types.sourcelink.json
+C:\Users\aerma\Downloads\UT-Bootcamp\Udemy\C#\Advanced_C#_Types\obj\Debug\net8.0\Advanced_C#_Types.dll
+C:\Users\aerma\Downloads\UT-Bootcamp\Udemy\C#\Advanced_C#_Types\obj\Debug\net8.0\refint\Advanced_C#_Types.dll
+C:\Users\aerma\Downloads\UT-Bootcamp\Udemy\C#\Advanced_C#_Types\obj\Debug\net8.0\Advanced_C#_Types.pdb
+C:\Users\aerma\Downloads\UT-Bootcamp\Udemy\C#\Advanced_C#_Types\obj\Debug\net8.0\Advanced_C#_Types.genruntimeconfig.cache
+C:\Users\aerma\Downloads\UT-Bootcamp\Udemy\C#\Advanced_C#_Types\obj\Debug\net8.0\ref\Advanced_C#_Types.dll
