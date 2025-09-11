@@ -1,27 +1,43 @@
-﻿// int number = null;
-string taco = null;
-bool? boolOrNull = true;
-int? numberOrNull = null;
-// Nullable<string> stringOrNull = null;
-
-var heights = new List<Nullable<int>> {
-  160, null, 185, null, 170
-};
-
-var averageHeight = heights.Average();
-System.Console.WriteLine(averageHeight);
-
-
-if (numberOrNull.HasValue)
-{
-  int number = numberOrNull.Value;
-  System.Console.WriteLine("Not null");
-}
-if (boolOrNull is not null)
-{
-  var someBool = boolOrNull.Value;
-  System.Console.WriteLine(someBool);
-}
+﻿
 
 Console.ReadKey();
 
+class House
+{
+  public string OwnerName { get; }
+  public Address Address { get; }
+
+  public House(string ownerName, Address address)
+  {
+    if (ownerName == null)
+    {
+      throw new ArgumentNullException(nameof(ownerName));
+    }
+    if (address == null) {
+      throw new ArgumentNullException(nameof(address));
+    }
+    OwnerName = ownerName;
+    Address = address;
+  }
+}
+
+class Address
+{
+  public string Street { get; }
+  public string Number { get; }
+
+  public Address(string street, string number)
+  {
+    if (street == null)
+    {
+      throw new ArgumentNullException(nameof(street));
+    }
+    if (number == null)
+    {
+      throw new ArgumentNullException(nameof(number));
+    }
+    Street = street;
+    Number = number;
+    
+  }
+}
