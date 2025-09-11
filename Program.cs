@@ -2,6 +2,7 @@
 var point1 = new Point(27, 1);
 dictionary[point1] = 99;
 var point2 = new Point(27, 1);
+System.Console.WriteLine(point2);
 
 System.Console.WriteLine(point1.GetHashCode());
 System.Console.WriteLine(point2.GetHashCode());
