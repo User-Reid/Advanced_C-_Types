@@ -1,5 +1,4 @@
-﻿
-
+﻿System.Console.WriteLine("Went over the null forgiving operator");
 Console.ReadKey();
 
 class House
