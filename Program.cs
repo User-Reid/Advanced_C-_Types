@@ -2,6 +2,7 @@
 var hash2 = "abc".GetHashCode();
 System.Console.WriteLine(hash1);
 System.Console.WriteLine(hash2);
+System.Console.WriteLine();
 
 Console.ReadKey();
 
