@@ -1,11 +1,5 @@
-﻿int sum = 5 + 8;
-string concatenated = "Hello" + " " + "there";
-
-var point1 = new Point(1, 5);
-var point2 = new Point(2, 4);
-var added = point1 + point2;
-
-System.Console.WriteLine(point1 == point2);
+﻿var tuple = Tuple.Create(10, 20);
+Point point = tuple;
 
 Console.ReadKey();
 
@@ -42,6 +36,8 @@ readonly struct Point : IEquatable<Point>
 
   public static bool operator ==(Point point1, Point point2) => point1.Equals(point2);
   public static bool operator !=(Point point1, Point point2) => !point1.Equals(point2);
+
+  public static implicit operator Point(Tuple<int, int> tuple) => new Point(tuple.Item1, tuple.Item2);
   
 }
 
