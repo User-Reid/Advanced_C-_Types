@@ -1,8 +1,13 @@
-﻿var hash1 = 123.GetHashCode();
-var hash2 = "abc".GetHashCode();
-System.Console.WriteLine(hash1);
-System.Console.WriteLine(hash2);
-System.Console.WriteLine();
+﻿var dictionary = new Dictionary<Point, int>();
+var point1 = new Point(27, 1);
+dictionary[point1] = 99;
+var point2 = new Point(27, 1);
+
+System.Console.WriteLine(point1.GetHashCode());
+System.Console.WriteLine(point2.GetHashCode());
+
+System.Console.WriteLine(dictionary[point2]);
+
 
 Console.ReadKey();
 
