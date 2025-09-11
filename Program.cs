@@ -1,4 +1,11 @@
-﻿
+﻿int sum = 5 + 8;
+string concatenated = "Hello" + " " + "there";
+
+var point1 = new Point(1, 5);
+var point2 = new Point(2, 4);
+var added = point1 + point2;
+
+System.Console.WriteLine(point1 == point2);
 
 Console.ReadKey();
 
@@ -30,6 +37,12 @@ readonly struct Point : IEquatable<Point>
   }
 
   public override string ToString() => $"X: {X}, Y: {Y}";
+
+  public static Point operator +(Point a, Point b) => new Point(a.X + b.X, a.Y + b.Y);
+
+  public static bool operator ==(Point point1, Point point2) => point1.Equals(point2);
+  public static bool operator !=(Point point1, Point point2) => !point1.Equals(point2);
+  
 }
 
 class Person
