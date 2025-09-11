@@ -1,10 +1,4 @@
-﻿var john = new Person("John", 1);
-var theSameAsJohn = john;
-System.Console.WriteLine(theSameAsJohn == john);
-System.Console.WriteLine(object.Equals(john, theSameAsJohn));
-theSameAsJohn = new Person("John", 1);
-System.Console.WriteLine(object.Equals(john, theSameAsJohn));
-System.Console.WriteLine();
+﻿
 
 Console.ReadKey();
 
