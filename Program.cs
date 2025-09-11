@@ -5,6 +5,7 @@ System.Console.WriteLine(tuple2 == tuple3);
 System.Console.WriteLine(tuple2.Equals(tuple3));
 System.Console.WriteLine(tuple2.GetHashCode());
 System.Console.WriteLine(tuple3.GetHashCode());
+// went over benefits from mutable and immutable types.
 
 var number = tuple2.Item1;
 // tuple2.Item1 = 20;
