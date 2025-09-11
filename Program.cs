@@ -1,48 +1,27 @@
-﻿
-// var rectangle = new Rectangle(10, 20);
-// rectangle.A = 30;
+﻿// int number = null;
+string taco = null;
+bool? boolOrNull = true;
+int? numberOrNull = null;
+// Nullable<string> stringOrNull = null;
 
-// Console.ReadKey();
+var heights = new List<Nullable<int>> {
+  160, null, 185, null, 170
+};
 
-// public record WeatherData(decimal Temperature, int Humidity);
+var averageHeight = heights.Average();
+System.Console.WriteLine(averageHeight);
 
-// public readonly record struct Rectangle(int A, int B);
 
-// public class WeatherData : IEquatable<WeatherData?>
-// {
-//   public decimal Temperature { get; }
-//   public int Humidity { get; }
-
-//   public WeatherData(decimal temperature, int humidity)
-//   {
-//     Temperature = temperature;
-//     Humidity = humidity;
-//   }
-
-//   public override string ToString() => $"Temperature: {Temperature}, Humidity: {Humidity}";
-
-//   public override bool Equals(object? obj)
-//   {
-//     return obj is WeatherData other && other.Temperature == Temperature && other.Humidity == Humidity;
-//   }
-
-//   public override int GetHashCode()
-//   {
-//     return HashCode.Combine(Temperature, Humidity);
-//   }
-
-//   public static bool operator ==(WeatherData? left, WeatherData? right)
-//   {
-//     return EqualityComparer<WeatherData?>.Default.Equals(left, right);
-//   }
-
-//   public static bool operator !=(WeatherData? left, WeatherData? right)
-//   {
-//     return !(left == right);
-//   }
-
-// }
+if (numberOrNull.HasValue)
+{
+  int number = numberOrNull.Value;
+  System.Console.WriteLine("Not null");
+}
+if (boolOrNull is not null)
+{
+  var someBool = boolOrNull.Value;
+  System.Console.WriteLine(someBool);
+}
 
 Console.ReadKey();
 
-public record GpsCoordinates(double Latitude, double Longitude);
