@@ -3,6 +3,7 @@ var theSameAsJohn = john;
 System.Console.WriteLine(object.ReferenceEquals(john, theSameAsJohn));
 theSameAsJohn = new Person("John", 1);
 System.Console.WriteLine(object.ReferenceEquals(john, theSameAsJohn));
+System.Console.WriteLine();
 
 
 Console.ReadKey();
