@@ -1,11 +1,12 @@
-﻿var weatherData = new WeatherData(25.1m, 65);
-System.Console.WriteLine(weatherData);
+﻿
+var rectangle = new Rectangle(10, 20);
+rectangle.A = 30;
 
-var warmerWeatherData = weatherData with { Temperature = 30 };
 Console.ReadKey();
 
 public record WeatherData(decimal Temperature, int Humidity);
 
+public readonly record struct Rectangle(int A, int B);
 
 // public class WeatherData : IEquatable<WeatherData?>
 // {
