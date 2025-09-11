@@ -1,5 +1,7 @@
-﻿var tuple = Tuple.Create(10, 20);
-Point point = tuple;
+﻿var hash1 = 123.GetHashCode();
+var hash2 = "abc".GetHashCode();
+System.Console.WriteLine(hash1);
+System.Console.WriteLine(hash2);
 
 Console.ReadKey();
 
@@ -38,7 +40,7 @@ readonly struct Point : IEquatable<Point>
   public static bool operator !=(Point point1, Point point2) => !point1.Equals(point2);
 
   public static implicit operator Point(Tuple<int, int> tuple) => new Point(tuple.Item1, tuple.Item2);
-  
+
 }
 
 class Person
