@@ -1,14 +1,15 @@
-﻿var dictionary = new Dictionary<Point, int>();
-var point1 = new Point(27, 1);
-dictionary[point1] = 99;
-var point2 = new Point(27, 1);
-System.Console.WriteLine(point2);
-
-System.Console.WriteLine(point1.GetHashCode());
-System.Console.WriteLine(point2.GetHashCode());
-
-System.Console.WriteLine(dictionary[point2]);
-
+﻿// var point1 = new Point(27, 1);
+// var point2 = new Point(27, 1);
+// var point3 = new Point(6, -1);
+// System.Console.WriteLine(point1.GetHashCode());
+// System.Console.WriteLine(point2.GetHashCode());
+// System.Console.WriteLine(point3.GetHashCode());
+var person1 = new Person("Martin", 6);
+var person2 = new Person("Martin", 6);
+var person3 = new Person("Bella", 7);
+System.Console.WriteLine(person1.GetHashCode());
+System.Console.WriteLine(person2.GetHashCode());
+System.Console.WriteLine(person3.GetHashCode());
 
 Console.ReadKey();
 
@@ -36,7 +37,13 @@ readonly struct Point : IEquatable<Point>
 
   public override bool Equals(object? obj)
   {
-    return obj is Point point && Equals(point);
+    return obj is Point point &&
+    Equals(point);
+  }
+
+  public override int GetHashCode()
+  {
+    return HashCode.Combine(X, Y);
   }
 
   public override string ToString() => $"X: {X}, Y: {Y}";
@@ -61,6 +68,11 @@ class Person
   {
     Name = name;
     Id = id;
+  }
+
+  public override int GetHashCode()
+  {
+    return Id;
   }
 
   // public override bool Equals(object? obj)
