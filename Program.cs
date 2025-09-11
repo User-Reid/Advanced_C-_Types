@@ -1,12 +1,12 @@
 ﻿
-var rectangle = new Rectangle(10, 20);
-rectangle.A = 30;
+// var rectangle = new Rectangle(10, 20);
+// rectangle.A = 30;
 
-Console.ReadKey();
+// Console.ReadKey();
 
-public record WeatherData(decimal Temperature, int Humidity);
+// public record WeatherData(decimal Temperature, int Humidity);
 
-public readonly record struct Rectangle(int A, int B);
+// public readonly record struct Rectangle(int A, int B);
 
 // public class WeatherData : IEquatable<WeatherData?>
 // {
@@ -40,5 +40,9 @@ public readonly record struct Rectangle(int A, int B);
 //   {
 //     return !(left == right);
 //   }
-  
+
 // }
+
+Console.ReadKey();
+
+public record GpsCoordinates(double Latitude, double Longitude);
