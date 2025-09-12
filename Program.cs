@@ -52,5 +52,6 @@ Console.ReadKey();
 
 void SomeMethod<T>(T input) where T : class?
 {
-  
+
 }
+// understanding what api's are.
